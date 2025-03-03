@@ -1,0 +1,95 @@
+/* Resume Page Container */
+.resume-container {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(to bottom, #f9f9f9, #e3f2fd);
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Resume Title */
+.resume-title {
+    font-size: 32px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    animation: slideIn 1s ease-in-out;
+}
+
+/* Resume Text */
+.resume-text {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Download Button */
+.download-btn {
+    display: inline-block;
+    padding: 14px 24px;
+    font-size: 18px;
+    color: white;
+    background: linear-gradient(135deg, #007bff, #00c6ff);
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 10px rgba(0, 123, 255, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Shimmer Effect */
+.download-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    transform: skewX(-20deg);
+    transition: 0.5s;
+}
+
+.download-btn:hover::before {
+    left: 100%;
+}
+
+.download-btn:hover {
+    transform: scale(1.05);
+    background: linear-gradient(135deg, #00c6ff, #007bff);
+}
+
+/* Resume Viewer */
+.resume-viewer {
+    width: 80%;
+    height: 500px;
+    margin: 30px auto;
+    display: block;
+    border: 3px solid #007bff;
+    border-radius: 10px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideIn {
+    from { opacity: 0; transform: translateX(-50px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .resume-viewer {
+        width: 95%;
+        height: 400px;
+    }
+}

@@ -1,0 +1,60 @@
+.skills-section {
+  padding: 50px 0;
+}
+
+.section-title {
+  position: relative;
+  display: inline-block;
+  font-size: 2rem;
+  text-align: center;
+  margin: 0 auto;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 0%;
+  height: 3px;
+  background-color: #ff6600; 
+  transition: width 0.5s ease-in-out;
+  transform: translateX(-50%)
+}
+
+.section-title[data-aos="fade-up"]::after {
+  width: 100%;
+}
+.skills-grid {
+  display: flex;
+  padding-top: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.skill-item {
+  width: 120px;
+  text-align: center;
+}
+
+.skill-item p {
+  margin-top: 8px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-image {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 50%;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
