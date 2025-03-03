@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./Resume.css";
+import MYResume from '../../assest/RAGAVIRAJASEKARAN.pdf'
 
 function Resume() {
   useEffect(() => {
@@ -17,12 +18,12 @@ function Resume() {
         Download my resume to explore my skills and experience.
       </p>
       
-      <a href="/assets/resume.pdf" className="download-btn" download data-aos="zoom-in">
+      <a href={MYResume} className="download-btn" download data-aos="zoom-in">
         Download Resume
       </a>
       
       <iframe 
-        src="/assets/resume.pdf" 
+        src={MYResume} 
         className="resume-viewer" 
         title="Resume Preview"
         data-aos="fade-up"
