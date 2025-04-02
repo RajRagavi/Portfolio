@@ -6,7 +6,6 @@ import {
   FaInfoCircle,
   FaUser,
   FaBriefcase,
-  FaPenFancy,
   FaEnvelope,
 } from "react-icons/fa";
 import "./Sidebar.css";

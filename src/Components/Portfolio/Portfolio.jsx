@@ -5,7 +5,7 @@ import "./Portfolio.css";
 import Itcoordinates from '../../assest/img/itcoordinates.jpg';
 import Aaraniyam from '../../assest/img/Aaraniyam.jpg';
 import SuyambuBhoomi from '../../assest/img/SuyambuBhoomi.jpg';
-import BulkEmail from '../../assest/img/BulkEmail.jpg';
+import JoyFinance from '../../assest/img/JoyFinance.JPG';
 import UlavTech from '../../assest/img/UlavTech.jpg';
 import Nextgendi from '../../assest/img/Nextgendi.jpg';
 import Maxtreme from '../../assest/img/Maxtreme.jpg';
@@ -14,7 +14,7 @@ const projects = [
   { title: "Aranyam", link: "https://aaraniyam.in/", image: Aaraniyam },
   { title: "Suyambu Bhoomi Balan Trust", link: "https://srisuyambuboomibalan.com/", image: SuyambuBhoomi },
   { title: "Ulav Tech", link: "#", image: UlavTech },
-  { title: "Bulk Email Tool", link: "https://bulk-email-tool-tau.vercel.app/", image: BulkEmail },
+  { title: "Joy Finance", link: "https://joyapp.in/", image: JoyFinance },
   { title: "Nextgendi Solutions", link: "https://www.nextgendi.com/", image: Nextgendi },
   { title: "Maxtreme", link: "https://www.maxtreme.in/", image: Maxtreme },
   { title: "Itcoordinates", link: "https://itcoordinates.in.net/", image: Itcoordinates },
